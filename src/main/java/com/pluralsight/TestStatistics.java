@@ -23,4 +23,12 @@ public class TestStatistics {
         }
         return highest;
     }
+
+    public static int lowScore(int[] testScores) {
+        int lowest = 0;
+        for (int score : testScores) {
+            lowest = Math.min(lowest, testScores[score]);
+        }
+        return lowest;
+    }
 }
